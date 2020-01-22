@@ -1,6 +1,6 @@
 {
     "version": "0.0.1",
-    "name": "easy-config",
+    "name": "easy-node-config",
     "description": "nconf wrapper that simplifies work with environment specific configuration files.",
     "keywords": [
         "configuration",
