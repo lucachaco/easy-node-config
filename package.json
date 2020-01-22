@@ -1,6 +1,6 @@
 {
-    "version": "0.0.4",
-    "name": "config.json",
+    "version": "0.0.1",
+    "name": "easy-config",
     "description": "nconf wrapper that simplifies work with environment specific configuration files.",
     "keywords": [
         "configuration",
@@ -10,15 +10,15 @@
         "wrapper"
     ],
     "author": {
-        "name": "Romuald Bulyshko",
-        "email": "romuald@bulyshko.com",
-        "url": "https://bulyshko.com"
+        "name": "Luis Chavarría",
+        "email": "luiscarlosch@gmail.com",
+        "url": "http://www.sourcequarter.com/"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/bulyshko/config.json"
+        "url": "https://github.com/lucachaco/easy-config"
     },
-    "bugs": "https://github.com/bulyshko/config.json/issues",
+    "bugs": "https://github.com/lucachaco/easy-config",
     "main": "./lib/config.js",
     "dependencies": {
         "nconf": "0.7.1"
