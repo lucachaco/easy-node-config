@@ -1,29 +1,26 @@
-# config.json
+# easy-node-config
 
-[nconf][nconf] wrapper that simplifies work
-with environment specific configuration files.
+Easy to use config based on [nconf][nconf] and [config.json][config.json]
 
-[![Build Status][build]][travis] [![Dependency Status][dependency]][david]
 
-**config.json** is easy to use; it:
+It will load config based on environment variables and command-line arguments to override data from configuration files.
+It will try to load the specific config file and if not found it will fallback to the next one removing the last selector from right to left:
 
-- loads the default configuration file;
-- loads environment specific configuration file and overrides defaults;
+- config.LC1.DEMO.json
+- config.LC1.json
+- config.json
 
-and then:
 
-- uses environment variables;
-- and command-line arguments to override data from configuration files.
 
 ## Installation
 
 ```
-npm install config.json
+npm install easy-node-config
 ```
 
 ## Usage
 
-The top-level of `config.json` is a function that loads configuration file with the given `filepath`.
+The top-level of `easy-node-config` is a function that loads configuration file with the given `filepath`.
 
 ### Create default configuration file
 
@@ -103,6 +100,8 @@ var productionConfig = require('config.json')('./sample.json', 'production');
 Released under the [MIT license][license].
 
 [nconf]:https://github.com/flatiron/nconf
+[config.json]:https://github.com/bulyshko/config.json
+
 [license]:https://raw.github.com/bulyshko/config.json/master/LICENSE
 [build]:https://travis-ci.org/bulyshko/config.json.svg?branch=master
 [travis]:https://travis-ci.org/bulyshko/config.json
